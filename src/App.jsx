@@ -37,6 +37,9 @@ export default function App() {
           <Route path="/apps" component={Apps} />
           <Route path="/art" component={Arts} />
         </Switch>
+        <footer>
+          <p>hi</p>
+        </footer>
       </BrowserRouter>
     </div>
   );
