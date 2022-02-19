@@ -1,3 +1,3 @@
-export const data = [
-  //insert data here from outside api
-];
+export const art = [{}];
+
+export const apps = [{}];
