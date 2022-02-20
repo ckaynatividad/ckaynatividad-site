@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import './Apps.css';
 
 import AppsList from '../../components/Projects/AppsList';
+import { appsData } from '../../services/data';
 
 export default function Apps() {
   return (
@@ -27,8 +29,8 @@ export default function Apps() {
           </li>
         </ul>
       </header>
-      <div>
-        <AppsList />
+      <div className="appsApp">
+        <AppsList apps={appsData} />
       </div>
     </>
   );

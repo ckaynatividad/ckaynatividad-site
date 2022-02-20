@@ -20,9 +20,7 @@ h1 {
   padding: 99.8px 100px 90px 40px;
   position: fixed;
 }
-img {
-  z-index: 3;
-}
+
 .text {
   width: 400px;
   line-height: 1.3;
