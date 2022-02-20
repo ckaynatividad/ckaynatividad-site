@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+h1 {
+  font-size: 85pt;
+  text-align: left;
+  margin: 0;
+  z-index: 2;
+  position: fixed;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.description {
+  font-size: 17pt;
+  width: 640px;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 0px;
+  margin-bottom: 0;
+  text-align: left;
+  background-color: rgb(126, 42, 42);
+  padding: 100px 100px 90px 40px;
+  position: fixed;
+}
+img {
+  z-index: 3;
+}
+.text {
+  width: 400px;
+  line-height: 1.3;
+  margin-top: 20px;
+  color: rgb(250, 242, 232);
+}
+
+h1,
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Home {
+  width: 1200px;
+  height: 500px;
+  margin: 45px 70px 70px 70px;
+  display: inline-flex;
+}
+
+.chime {
+  margin: 155px 0px 0px 230px;
+  z-index: 2;
+  height: fit-content;
+  position: fixed;
+}
+
+.line {
+  width: 70px;
+  height: 0.5px;
+  opacity: 50%;
+}
+
+.line2 {
+  margin: 260px 0px 0px 550px;
+  z-index: 3;
+  width: 0.5px;
+  height: 50px;
+  opacity: 50%;
+}
+
+.icon {
+  width: 34px;
+  height: 34px;
+  z-index: 3;
+  margin-top: 35px;
+  position: fixed;
+  opacity: 90%;
+  position: fixed;
+}
+
+.icon2 {
+  width: 34px;
+  height: 34px;
+  z-index: 3;
+  margin-top: 35px;
+  margin-left: 55px;
+  position: fixed;
+  opacity: 90%;
+  border-radius: 40%;
+  position: fixed;
+}
+
+.pic {
+  width: 430px;
+  height: 430px;
+  margin-left: 45%;
+  margin-top: 8%;
+  z-index: 1;
+  position: fixed;
+}
+
+.icon-pic {
+  display: flexbox;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.city {
+  margin-top: 50px;
+  margin-bottom: 0;
+}

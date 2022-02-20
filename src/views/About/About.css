@@ -1,5 +1,5 @@
 .about {
-  background-color: rgba(240, 240, 240, 0.74);
+  border: 1pt solid rgba(55, 55, 55, 0.384);
   width: 980px;
   height: 620px;
   display: flex;
