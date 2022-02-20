@@ -41,7 +41,7 @@ export default function Home() {
         <div className="description">
           <p className="text">
             Full stack web developer with a knack for user interface design. I
-            like to make and look at nice things.
+            also like art and flowers.
             <p className="city">Based in Portland, Oregon.</p>
             <div className="icon-pic">
               <a href="https://www.linkedin.com/in/ckaynatividad/">
