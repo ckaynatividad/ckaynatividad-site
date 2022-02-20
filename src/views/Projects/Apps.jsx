@@ -26,11 +26,6 @@ export default function Apps() {
             </div>
           </li>
         </ul>
-
-        <ul className="icons">
-          <li>twitter</li>
-          <li>email</li>
-        </ul>
       </header>
       <div>
         <AppsList />

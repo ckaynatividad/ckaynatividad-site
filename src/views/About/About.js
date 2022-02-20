@@ -25,14 +25,8 @@ export default function About() {
             </div>
           </li>
         </ul>
-
-        <ul className="icons">
-          <li>twitter</li>
-          <li>email</li>
-        </ul>
       </header>
       <div className="about">
-        <h4>About</h4>
         <p></p>
       </div>
     </>

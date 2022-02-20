@@ -9,32 +9,6 @@ export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <header>
-          <ul className="nav">
-            <li>
-              <NavLink to="/" className="active">
-                HOME
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/about" className="active">
-                ABOUT
-              </NavLink>
-            </li>
-            <li className="dropdown">
-              <a className="fakeLink">PORTFOLIO</a>
-              <div className="dropdown-links">
-                <a href="/apps">APPLICATIONS</a>
-                <a href="/art">ART</a>
-              </div>
-            </li>
-          </ul>
-
-          <ul className="icons">
-            <li>twitter</li>
-            <li>email</li>
-          </ul>
-        </header> */}
         <Switch>
           <Route path="/" exact>
             <Home />
@@ -43,7 +17,7 @@ export default function App() {
           <Route path="/apps" component={Apps} />
           <Route path="/art" component={Arts} />
         </Switch>
-        <footer></footer>
+        <footer>© 2022. Made by me.</footer>
       </BrowserRouter>
     </div>
   );

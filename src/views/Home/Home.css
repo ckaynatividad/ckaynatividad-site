@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
 h1 {
   font-size: 85pt;
   text-align: left;
@@ -6,19 +5,19 @@ h1 {
   z-index: 2;
   position: fixed;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: rgb(3, 10, 2);
 }
 
 .description {
   font-size: 17pt;
   width: 640px;
   display: flex;
-  margin-top: 100px;
+  margin-top: 99px;
   margin-left: 0px;
   margin-bottom: 0;
   text-align: left;
   background-color: rgb(126, 42, 42);
-  padding: 100px 100px 90px 40px;
+  padding: 99.8px 100px 90px 40px;
   position: fixed;
 }
 img {
@@ -39,8 +38,57 @@ h1,
 .Home {
   width: 1200px;
   height: 500px;
-  margin: 45px 70px 70px 70px;
+  margin: 45px 70px 170px 70px;
   display: inline-flex;
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .chime {

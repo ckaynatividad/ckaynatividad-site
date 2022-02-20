@@ -25,11 +25,6 @@ export default function Home() {
             </div>
           </li>
         </ul>
-
-        <ul className="icons">
-          <li>twitter</li>
-          <li>email</li>
-        </ul>
       </header>
       <div className="Home">
         <h1>Hi, I'm Ckay. </h1>
