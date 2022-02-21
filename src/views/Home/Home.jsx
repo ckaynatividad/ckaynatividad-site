@@ -35,8 +35,8 @@ export default function Home() {
         <img className="pic" src={require('./assets/pic.jpg')} />
         <div className="description">
           <p className="text">
-            I am a full stack web developer with a knack for user interface
-            design. I also like art and flowers. <a href="/about">⪼</a>
+            I am a full-stack software engineer with a knack for user interface
+            design. I also like arts and flowers. <a href="/about">⪼</a>
             <div className="icon-pic">
               <a href="https://www.linkedin.com/in/ckaynatividad/">
                 <img
