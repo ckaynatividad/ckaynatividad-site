@@ -27,6 +27,11 @@ export default function About() {
         </ul>
       </header>
       <div className="about">
+        <p>
+          Hi! I'm an Asian-American developer born and raised in the Bay Area,
+          CA. At this time I am currently based in Portland, OR.
+        </p>
+
         <p></p>
       </div>
     </>
