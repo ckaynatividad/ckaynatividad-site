@@ -1,0 +1,24 @@
+.art {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 1300px;
+  height: 500px;
+  margin-top: 220px;
+}
+
+.art h1 {
+  text-align: left;
+  font-size: 85pt;
+  text-align: left;
+  margin-right: 40%;
+  margin-top: 0%;
+  z-index: 4;
+  font-weight: bold;
+  width: 500px;
+  position: absolute;
+}
+
+embed {
+  margin-top: 98px;
+}
