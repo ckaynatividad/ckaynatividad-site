@@ -1,4 +1,143 @@
-.App {
+body {
   text-align: center;
-  background-color: cyan;
+  background-color: rgb(250, 250, 250);
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+  letter-spacing: 2px;
+}
+
+.nav {
+  list-style-type: none;
+  display: inline-flex;
+  width: 400px;
+  height: fit-content;
+  margin-bottom: 15px;
+  padding: 0px 0px 0px 7px;
+  margin-left: 0;
+  position: sticky;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+li a,
+.fakeLink {
+  display: flex;
+  font-size: 7.5pt;
+  justify-content: space-between;
+  padding: 9px 10px 9px 10px;
+  color: rgb(3, 10, 2);
+  text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.384);
+  position: relative;
+}
+
+.active {
+  text-decoration: none;
+}
+
+.active:visited {
+  color: rgb(3, 10, 2);
+}
+
+.fakeLink {
+  cursor: pointer;
+}
+li .dropdown {
+  display: inline-block;
+}
+
+.dropdown-links {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  min-width: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.301);
+}
+
+.dropdown-links a {
+  text-decoration: none;
+  color: rgb(29, 24, 24);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 9px 10px 9px 10px;
+  display: block;
+  text-align: left;
+  text-shadow: 2px 2px 2px rgba(128, 128, 128, 0.384);
+}
+
+.dropdown-links a:visited {
+  color: rgb(0, 0, 0);
+}
+
+/* credit start tobiasahlin.com */
+li a::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(3, 10, 2);
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+li a:hover::before {
+  transform: scaleX(1);
+}
+
+.current a::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(3, 10, 2);
+  transform: scaleX(1);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+#current .fakeLink::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(3, 10, 2);
+  transform: scaleX(1);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+
+/* credit end tobiasahlin.com */
+
+li:hover {
+  color: rgba(79, 78, 78, 0.309);
+  width: auto;
+}
+
+.dropdown:hover .dropdown-links {
+  display: block;
+}
+
+footer {
+  color: rgba(3, 10, 2, 0.205);
+  font-size: 7.5pt;
+  margin: auto;
+  padding: 0;
+  text-align: center;
 }

@@ -1,0 +1,46 @@
+.appsApp {
+}
+
+.appImg {
+  width: 260px;
+  height: 260px;
+  border-radius: 5%;
+}
+
+.apps {
+  display: inline-flex;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.appCard {
+  margin: 50px;
+  text-decoration: none;
+  padding: 25px 20px 20px 20px;
+  border-radius: 3%;
+  border: 1pt solid grey;
+}
+
+.appCard p {
+  margin: 0;
+
+  color: black;
+  width: 300px;
+  line-height: 20px;
+}
+
+.appCard h2 {
+  color: black;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+p.date {
+  font-size: 8pt;
+  color: rgba(128, 128, 128, 0.438);
+}
+
+.title {
+  line-height: 16px;
+  margin-bottom: 12px;
+}
