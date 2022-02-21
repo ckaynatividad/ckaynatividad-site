@@ -127,8 +127,8 @@ export default function Home() {
         <h1>My Art</h1>
         <embed
           src="https://ckaynat.tumblr.com/"
-          width="100%"
-          height="800"
+          width="90%"
+          height="600"
         ></embed>
       </div>
     </>
