@@ -1,7 +1,6 @@
 import { BrowserRouter, NavLink, Route, Switch } from 'react-router-dom';
 import './App.css';
 
-import About from './views/About/About';
 import Home from './views/Home/Home';
 import Apps from './views/Projects/Apps';
 import Arts from './views/Projects/Arts';
@@ -13,7 +12,6 @@ export default function App() {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/about" component={About} />
           <Route path="/apps" component={Apps} />
           <Route path="/art" component={Arts} />
         </Switch>

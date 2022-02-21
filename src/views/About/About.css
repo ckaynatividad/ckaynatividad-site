@@ -1,9 +1,0 @@
-#about {
-  border: 1pt solid rgba(55, 55, 55, 0.384);
-  width: 1200px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  margin: 45px 70px 170px 70px;
-  display: inline-flex;
-}

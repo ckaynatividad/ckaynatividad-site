@@ -1,12 +1,23 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+
 import AppsList from '../../components/Projects/AppsList';
-import ArtsList from '../../components/Projects/ArtsList';
+
 import { appsData } from '../../services/data';
 import './Home.css';
+import '../Projects/Apps.css';
+import '../Projects/Arts.css';
 
 export default function Home() {
   const [scrollButton, setScrollButton] = useState(false);
+
+  const [isVisible, setVisible] = useState();
+  useEffect(() => {
+    const observer = new IntersectionObserver((posts) => {
+      posts.forEach((post) => setVisible(post.isIntersecting));
+    });
+    observer.observe(apps.current);
+    return () => observer.unobserve(apps.current);
+  }, []);
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -21,12 +32,11 @@ export default function Home() {
   const scrollTop = () => {
     window.scrollTo({ top: 0 });
   };
-  const about = useRef();
+
   const home = useRef();
   const apps = useRef();
   const art = useRef();
 
-  const scrollAbout = () => about.current.scrollIntoView();
   const scrollHome = () => home.current.scrollIntoView();
   const scrollApps = () => apps.current.scrollIntoView();
   const scrollArt = () => art.current.scrollIntoView();
@@ -43,11 +53,6 @@ export default function Home() {
           <li>
             <a className="fakeLink" onClick={scrollHome}>
               HOME
-            </a>
-          </li>
-          <li className="active">
-            <a className="fakeLink" onClick={scrollAbout}>
-              ABOUT
             </a>
           </li>
           <li className="dropdown">
@@ -72,8 +77,12 @@ export default function Home() {
         <img className="pic" src={require('./assets/pic.jpg')} />
         <div className="description">
           <p className="text">
-            I am a full-stack software engineer with a knack for user interface
-            design. I also love art.
+            I am a full-stack software engineer and I love all things art. I
+            also happen to have a knack for designing things.{' '}
+            <a href="https://www.linkedin.com/in/ckaynatividad/">Say hello!</a>
+            <br />
+            <br />
+            Based in Portland, Oregon.
             <div className="icon-pic">
               <a href="https://www.linkedin.com/in/ckaynatividad/">
                 <img
@@ -106,21 +115,21 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div ref={about} id="about">
-        <p>
-          Hi! I'm an Asian-American developer born and raised in the Bay Area,
-          CA. At this time I am currently based in Portland, OR.
-        </p>
 
-        <p></p>
-      </div>
-
-      <div ref={apps} className="appsApp">
-        <AppsList apps={appsData} />
+      <div ref={apps} className={`appsdiv ${isVisible ? 'is-visible' : ''}`}>
+        <h1>Recent Projects</h1>
+        <div className="appsApp">
+          <AppsList apps={appsData} />
+        </div>
       </div>
 
       <div ref={art} className="art">
-        <ArtsList />
+        <h1>My Art</h1>
+        <embed
+          src="http://ckaynat.tumblr.com/"
+          width="100%"
+          height="800"
+        ></embed>
       </div>
     </>
   );

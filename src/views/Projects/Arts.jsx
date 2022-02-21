@@ -27,9 +27,7 @@ export default function Arts() {
           </li>
         </ul>
       </header>
-      <div>
-        <ArtsList />
-      </div>
+      <div></div>
     </>
   );
 }
