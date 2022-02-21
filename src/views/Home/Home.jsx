@@ -36,7 +36,7 @@ export default function Home() {
         <div className="description">
           <p className="text">
             I am a full-stack software engineer with a knack for user interface
-            design. I also like arts and flowers. <a href="/about">⪼</a>
+            design. I also love art.
             <div className="icon-pic">
               <a href="https://www.linkedin.com/in/ckaynatividad/">
                 <img
@@ -51,6 +51,19 @@ export default function Home() {
                   src={require('./assets/github.png')}
                   alt=""
                 />
+              </a>
+              <a href="mailto:natividad.ckay@gmail.com">
+                <img
+                  className="icon3"
+                  src={require('./assets/plane.png')}
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1BPIgE8b7hTfar7jDURo-iRCylphzUL0c/view?usp=sharing"
+                download="resume"
+              >
+                <img className="icon4" src={require('./assets/page.png')} />
               </a>
             </div>
           </p>
