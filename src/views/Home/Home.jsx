@@ -1,32 +1,69 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import AppsList from '../../components/Projects/AppsList';
+import ArtsList from '../../components/Projects/ArtsList';
+import { appsData } from '../../services/data';
 import './Home.css';
 
 export default function Home() {
+  const [scrollButton, setScrollButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        setScrollButton(true);
+      } else {
+        setScrollButton(false);
+      }
+    });
+  });
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0 });
+  };
+  const about = useRef();
+  const home = useRef();
+  const apps = useRef();
+  const art = useRef();
+
+  const scrollAbout = () => about.current.scrollIntoView();
+  const scrollHome = () => home.current.scrollIntoView();
+  const scrollApps = () => apps.current.scrollIntoView();
+  const scrollArt = () => art.current.scrollIntoView();
+
   return (
     <>
+      {scrollButton && (
+        <button onClick={scrollTop} className="top">
+          ⇧
+        </button>
+      )}
       <header>
         <ul className="nav">
-          <li className="current">
-            <NavLink to="/" className="active">
+          <li>
+            <a className="fakeLink" onClick={scrollHome}>
               HOME
-            </NavLink>
+            </a>
           </li>
           <li className="active">
-            <NavLink to="/about" className="active">
+            <a className="fakeLink" onClick={scrollAbout}>
               ABOUT
-            </NavLink>
+            </a>
           </li>
           <li className="dropdown">
-            <a className="fakeLink">PORTFOLIO</a>
+            <a>PORTFOLIO</a>
             <div className="dropdown-links">
-              <a href="/apps">APPLICATIONS</a>
-              <a href="/art">ART</a>
+              <a className="fakeLink" onClick={scrollApps}>
+                APPLICATIONS
+              </a>
+              <a className="fakeLink" onClick={scrollArt}>
+                ART
+              </a>
             </div>
           </li>
         </ul>
       </header>
-      <div className="Home">
+      <div className="Home" ref={home}>
         <h1>Hi, I'm Ckay. </h1>
         <p className="top-line">
           <img className="line" src={require('./assets/line2.png')} />
@@ -68,6 +105,22 @@ export default function Home() {
             </div>
           </p>
         </div>
+      </div>
+      <div ref={about} id="about">
+        <p>
+          Hi! I'm an Asian-American developer born and raised in the Bay Area,
+          CA. At this time I am currently based in Portland, OR.
+        </p>
+
+        <p></p>
+      </div>
+
+      <div ref={apps} className="appsApp">
+        <AppsList apps={appsData} />
+      </div>
+
+      <div ref={art} className="art">
+        <ArtsList />
       </div>
     </>
   );
