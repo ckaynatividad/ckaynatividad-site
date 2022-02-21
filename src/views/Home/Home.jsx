@@ -126,7 +126,7 @@ export default function Home() {
       <div ref={art} className="art">
         <h1>My Art</h1>
         <embed
-          src="http://ckaynat.tumblr.com/"
+          src="https://ckaynat.tumblr.com/"
           width="100%"
           height="800"
         ></embed>
