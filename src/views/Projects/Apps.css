@@ -1,11 +1,17 @@
 div .apps {
   margin-top: 100px;
+  width: 1200px;
+  height: fit-content;
 }
 
 .appImg {
-  width: 260px;
-  height: 260px;
+  width: 250px;
+  height: 250px;
   border-radius: 5%;
+  opacity: 90%;
+  float: left;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
 }
 
 .appsdiv {
@@ -15,6 +21,9 @@ div .apps {
   visibility: hidden;
   transition: opacity 0.5s ease-out, transform 1s ease-out;
   will-change: opacity, visibility;
+  display: inline-flex;
+  position: relative;
+  width: fit-content;
 }
 
 .is-visible {
@@ -24,35 +33,52 @@ div .apps {
 }
 .apps {
   display: inline-flex;
-  margin: 10px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px;
+  padding: 30px;
+  background: rgb(56, 77, 75);
 }
 
 .appCard {
-  margin: 50px;
+  display: flex;
+  margin: 40px;
   text-decoration: none;
   padding: 25px 20px 20px 20px;
   border-radius: 3%;
-  border: 1pt solid grey;
+}
+
+div.content {
+  width: fit-content;
 }
 
 .appCard p {
-  margin: 0;
-
-  color: black;
-  width: 300px;
+  margin: 0px 0px 0px 40px;
+  text-align: left;
+  width: 100px;
+  color: rgb(230, 229, 227);
+  width: fit-content;
   line-height: 20px;
+  font-style: italic;
+}
+
+.title {
+  display: flex;
 }
 
 .appCard h2 {
-  color: black;
-  letter-spacing: 3px;
+  color: rgb(242, 239, 239);
+  text-align: left;
+  /* letter-spacing: 2px; */
   margin-bottom: 0;
+  margin: 0px 0px 0px 40px;
+  text-shadow: 2px 2px 4px #00000031;
 }
 
 p.date {
-  font-size: 8pt;
-  color: rgba(128, 128, 128, 0.438);
+  font-size: 9pt;
+  margin: 0px 0px 0px 5px;
+  text-align: left;
+  color: rgba(211, 210, 210, 0.562);
 }
 
 .title {
@@ -63,10 +89,11 @@ p.date {
 .appsdiv h1 {
   font-size: 85pt;
   text-align: left;
-  margin-left: 10%;
+  margin-left: 5%;
   margin-top: 0%;
   z-index: 4;
   font-weight: bold;
   width: 1000px;
   position: absolute;
+  text-align: left;
 }
