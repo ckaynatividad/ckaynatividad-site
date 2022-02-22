@@ -1,8 +1,9 @@
 .Home h1 {
   font-size: 85pt;
   text-align: left;
-  margin: 0;
   z-index: 2;
+  margin: 0% 0% 0% 5%;
+  width: fit-content;
   font-weight: bold;
   color: rgb(3, 10, 2);
   -webkit-animation: fadeIn 5s;
@@ -17,8 +18,8 @@
   font-size: 13pt;
   width: 640px;
   display: flex;
-  margin-top: 99px;
-  margin-left: 0px;
+  margin-top: 100px;
+  margin-left: 5%;
   margin-bottom: 0;
   text-align: left;
   background-color: rgb(126, 42, 42);
@@ -54,7 +55,8 @@ h1,
   width: 1200px;
   height: 450px;
   margin: 30px 70px 170px 70px;
-  display: inline-flex;
+  /* display: inline-flex; */
+  position: relative;
 }
 @keyframes fadeIn {
   0% {
@@ -162,9 +164,9 @@ h1,
 .pic {
   width: 420px;
   height: 420px;
-  margin-left: 43%;
-  margin-top: 7.8%;
-  z-index: 1;
+  margin: 10% 5% 0% 9%;
+  z-index: 4;
+  float: right;
   position: absolute;
   -webkit-animation: fadeIn 2s 1s;
   animation: fadeIn 2s 1s;
