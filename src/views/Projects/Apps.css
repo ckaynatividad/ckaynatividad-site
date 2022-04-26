@@ -1,11 +1,11 @@
 div .apps {
   margin-top: 100px;
-  width: 1200px;
+  width: 1100px;
   height: fit-content;
 }
 
 .appImg {
-  width: 400px;
+  width: 470px;
   border-radius: 5%;
   opacity: 90%;
   float: left;
@@ -35,12 +35,12 @@ div .apps {
   flex-direction: column;
   margin: 20px;
   padding: 30px;
-  background: rgb(56, 77, 75);
+  background: rgb(12, 15, 24);
 }
 
 .appCard {
   display: flex;
-  margin: 40px;
+  margin: 25px;
   text-decoration: none;
   padding: 25px 20px 20px 20px;
   border-radius: 3%;
@@ -50,18 +50,28 @@ div.content {
   width: fit-content;
 }
 
+.desc {
+  font-size: 11.8pt;
+  padding-top: 8px;
+  color: rgb(230, 229, 227);
+}
+
+.duties {
+  font-style: italic;
+  color: rgb(207, 206, 204);
+  font-size: 10.5pt;
+}
 .appCard p {
   margin: 0px 0px 0px 40px;
   text-align: left;
   width: 100px;
-  color: rgb(230, 229, 227);
   width: fit-content;
   line-height: 20px;
-  font-style: italic;
 }
 
 .title {
   display: flex;
+  font-size: 15pt;
 }
 
 .appCard h2 {
@@ -75,8 +85,9 @@ div.content {
 
 p.date {
   font-size: 9pt;
-  margin: 0px 0px 0px 5px;
+  margin: 2.5px 0px 0px 10px;
   text-align: left;
+  font-style: italic;
   color: rgba(211, 210, 210, 0.562);
 }
 

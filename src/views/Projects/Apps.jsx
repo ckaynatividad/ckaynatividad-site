@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Apps.css';
 
 export default function AppsList({ apps }) {
   return (
@@ -12,7 +13,10 @@ export default function AppsList({ apps }) {
               <h2>{app.title}</h2>
               <p className="date">{app.date}</p>
             </div>
-            <p>{app.desc}</p>
+            <p className="desc">{app.desc}</p>
+            <br></br>
+            <br></br>
+            <p className="duties">{app.duties}</p>
           </div>
         </a>
       ))}

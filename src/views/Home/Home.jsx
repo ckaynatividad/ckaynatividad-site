@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import AppsList from '../../components/Projects/AppsList';
+import AppsList from '../Projects/Apps';
 
 import { appsData } from '../../services/data';
 import './Home.css';
@@ -106,7 +106,7 @@ export default function Home() {
                 />
               </a>
               <a
-                href="https://drive.google.com/file/d/1BPIgE8b7hTfar7jDURo-iRCylphzUL0c/view?usp=sharing"
+                href="https://drive.google.com/file/d/1PQkVqUbeiiG9aCxz38R1mnmZOaPmnzUe/view?usp=sharing"
                 download="resume"
               >
                 <img className="icon4" src={require('./assets/page.png')} />

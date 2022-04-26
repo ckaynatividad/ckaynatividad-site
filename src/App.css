@@ -140,3 +140,7 @@ footer {
   padding: 150px 0px 50px 0px;
   text-align: center;
 }
+
+.App {
+  width: fit-content;
+}
