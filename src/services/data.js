@@ -27,7 +27,7 @@ export const appsData = [
     title: 'Gotchi BB',
     desc: 'Gotchi BB is an online digital pixel pet that users can feed, clean, play with, and chat with. The amount of times one interacts with their pet (feeding, petting, or playing) adds to an overall happiness score that is then ranked on a site leaderboard.',
     duties: 'Duties: Backend construction, UI design, and debugging.',
-    img: 'https://media-exp1.licdn.com/dms/image/C5622AQGVc3GJEI1epw/feedshare-shrink_1280/0/1650901358446?e=2147483647&v=beta&t=Im_-pYjQIa5HXNHpnJbfDG2AZrOtw-zNgV-iA3Z2y98',
+    img: 'https://64.media.tumblr.com/f1344feb7a565c2d43b3b8f261f61e88/9c15e60676a71712-27/s1280x1920/2e61e08eb31efeacf1685402c5082273bb16318c.jpg',
     url: 'https://github.com/Tamagotchi-Clone/gotchi-bb-frontend',
     date: 'April 2022',
   },
