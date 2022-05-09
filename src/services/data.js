@@ -10,7 +10,7 @@ export const appsData = [
     duties: `Duties: UI design,
     gameplay mechanics, and debugging.`,
     img: 'https://64.media.tumblr.com/ac85967f90b02d3a81dc05a38df8bf03/8d647e8b8d745ee0-0e/s1280x1920/0528f106498ba775ec10838f412bdc62ce3e650b.png',
-    url: 'https://ckaynatividad.github.io/pokemon-battling/',
+    url: 'https://github.com/ckaynatividad/pokemon-battling',
     date: 'December 2021',
   },
   {
