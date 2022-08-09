@@ -106,7 +106,7 @@ export default function Home() {
                 />
               </a>
               <a
-                href="https://drive.google.com/file/d/1NIJ1m9iBZQV1qWIqGt0HXz9hRiQhx1m9/view?usp=sharing"
+                href="https://docs.google.com/document/d/1dp2cA6lki6v1yM9HTiZ2nEGsrNvbDF38hARFzv7a4RQ/edit?usp=sharing"
                 download="resume"
               >
                 <img className="icon4" src={require('./assets/page.png')} />
