@@ -25,9 +25,9 @@
   background-color: rgb(59, 22, 22);
   padding: 99.8px 100px 50px 40px;
   position: absolute;
-  -webkit-animation: fadeIn 5s 2s;
-  animation: fadeIn 3s 2s;
-  -moz-animation: fadeIn 3s 2s;
+  -webkit-animation: fadeIn 5s 1s;
+  animation: fadeIn 3s 1s;
+  -moz-animation: fadeIn 3s 1s;
   -o-animation: fadeIn 3s;
   -ms-animation: fadeIn 3s;
   animation-fill-mode: both;

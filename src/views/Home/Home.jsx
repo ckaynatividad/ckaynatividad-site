@@ -74,7 +74,7 @@ export default function Home() {
           <img className="line" src={require('./assets/line2.png')} />
         </p>
         <img className="line2" src={require('./assets/line2.png')} />
-        <img className="pic" src={require('./assets/pic.jpg')} />
+        {/* <img className="pic" src={require('./assets/pic.jpg')} /> */}
         <div className="description">
           <p className="text">
             I am a full-stack software engineer and I love all things art. I
